@@ -22,3 +22,12 @@
    </ul>
     Not: raiseSalary() hesaplarken vergi ve bonusları dikkate almalısınız.
 </p>
+<p dir="auto"> Notlar
+<ul>
+    <li>raiseSalary() hesaplarken vergi ve bonusları dikkate almalısınız.</li>
+    <li>tax() fonksiyonu ile sadece salary’i uygulanan vergi hesaplanacak</li>
+    <li>Toplam maaş: çalışanın kendi maaşı+ bonus</li>
+    <li>Vergi ve bonuslarla birlikte maaş için: vergi, bonus ve çalışanın kendi maaşı ile bulunacak.</li>
+</ul>
+</p>
+
