@@ -23,25 +23,26 @@ public class Employee{
 		return result;
 	}
 	public double raiseSalary(){
-		double result=0.0, netSalary= this.salary+bonus()-tax();
+		double result=0.0;
 		int currentYear = 2021;
 		if (this.hireYear<currentYear)
-			if (currentYear-this.hireYear<10) result=netSalary * 0.05;
-			else if (currentYear-this.hireYear<20) result=netSalary * 0.10;
-			else if (currentYear-this.hireYear>19) result=netSalary * 0.15;
+			if (currentYear-this.hireYear<10) result=this.salary * 0.05;
+			else if (currentYear-this.hireYear<20) result=this.salary * 0.10;
+			else if (currentYear-this.hireYear>19) result=this.salary * 0.15;
 		return result;
 	}
 	
 	public String toString(){
 		return (
-        "Adı : "+name+
-        "\nMaaşı : "+salary+
-        "\nÇalışma Saati : "+workHour+
-        "\nBaşlangıç Yılı : "+hireYear+
+        "AdÄ± : "+name+
+        "\nMaaÅŸÄ± : "+salary+
+        "\nÃ‡alÄ±ÅŸma Saati : "+workHour+
+        "\nBaÅŸlangÄ±Ã§ YÄ±lÄ± : "+hireYear+
         "\nVergi : "+ tax()+
         "\nBonus : "+ bonus()+
-        "\nMaaş Artışı : "+raiseSalary()+        
-        "\nToplam Maaş : "+(salary+bonus()-tax()+raiseSalary()));
+        "\nMaaÅŸ ArtÄ±ÅŸÄ± : "+raiseSalary()+        
+        "\nToplam MaaÅŸ : "+(salary+bonus());
+	"\nVergi ve Bonuslarla Birlikte MaaÅŸ : "+(salary+bonus()-tax());
 	}
 	
 }
