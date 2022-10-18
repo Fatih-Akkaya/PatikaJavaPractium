@@ -19,7 +19,7 @@ public class Employee{
 	
 	public double bonus(){
 		double result=0.0;
-		if (this.workHour>40) result = (((this.workHour-40) * 30) / 7) * 30;
+		if (this.workHour>40) result = (this.workHour-40) * 30;
 		return result;
 	}
 	public double raiseSalary(){
