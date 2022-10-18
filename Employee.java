@@ -42,7 +42,7 @@ public class Employee{
         "\nBonus : "+ bonus()+
         "\nMaaş Artışı : "+raiseSalary()+        
         "\nVergi ve Bonuslarla Birlikte Maaş : "+(salary+bonus()-tax()) +
-        "\nToplam Maaş : "+(salary+bonus()+raiseSalary()-tax())
+        "\nToplam Maaş : "+(salary+bonus()+raiseSalary()-tax()));
 	}
 	
 }
